@@ -24,49 +24,23 @@
       <a href="userregistration.html">Register</a>
       <a href="checkout.html">Checkout</a>
     </div>
-    <main>
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <h5 class="card-title">Sign In</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Email</h6>
-          <nav class="navbar bg-body-tertiary">
-            <form class="container-fluid">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Email"
-                  aria-label="Email"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-                <div><h6 class="card-subtitle mb-2 text-body-secondary">Password</h6>
-                    <nav class="navbar bg-body-tertiary">
-                      <form class="container-fluid">
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Password"
-                            aria-label="Password"
-                            aria-describedby="basic-addon1"
-                          /></div>
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="remembercheck">
-                            <label class="form-check-label" for="remembercheck">Remember Me</label>
-                          </div>
-                          <a href="#" class="card-link">Forgot Password</a>
-                        
+    <main class="container mt-4">
+        <div class="card" style="width: 30rem">
+      <form >
+
     
-    <button type="button" class="btn btn-primary btn-lg">Sign In</button>
-    <button type="button" class="btn btn-secondary btn-lg">Create Account</button>
-              </div>
-            </form>
-          </nav>
-        
-        
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="text" />
         </div>
-      </div>
+
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input id="password" class="form-control" type="password" />
+        </div>
+        <button class="btn-primary">Sign In</button>
+      </form>
+    </div>
     </main>
     <footer>&copy; 2020-2024 Scented Serenity</footer>
   </body>
