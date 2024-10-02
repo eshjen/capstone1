@@ -26,99 +26,78 @@
     <a href="userregistration.html">Register</a>
     <a href="checkout.html">Checkout</a>
   </div>
+  <main class="container mt-4">
+    <div class="card p-4 bg-body-tertiary" style="width: 30rem">
+  <form>
+<h3>Checkout </h3>
 
-  <main>
-    <div class="card" style="width: 50rem;">
-        <div class="card-body">
-          <h5 class="card-title">Billing Address</h5>
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
-          </div
+    <div class="mb-3">
+        <label for="firstname">First Name</label>
+        <input id="firstname" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+        <label for="emailoptional">Email (optional)</label>
+        <input id="emailoptional" class="form-control" type="text"/>
+    </div>
+
+    <div class="mb-3">
+        <label for="address">Address</label>
+        <input id="address" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+        <label for="apt">Apt, Suite, or Other (optional)</label>
+        <input  id="apt" class="form-control" type="text">
+    </div>
+
+    <div class="mb-3">
+        <label for="zip">Zip</label>
+        <input id="zip" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+        <label for="city">City</label>
+        <input id="city" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+        <label for="country">Country</label>
+        <input id="country" class="form-control" type="text" />
+    </div>
+
+
+
+    <div class="mb-3">
+        <label for="nameoncard">Name On Card</label>
+        <input id="nameoncard" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+        <label for="cardnumber">Credit Card Number</label>
+        <input id="cardnumber" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+        <label for="expiration">Expiration</label>
+        <input id="expiration" class="form-control" type="text" />
+    </div>
     
-        
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-       
-        </div>
-        
-        <fieldset class="row mb-3">
-            <legend class="col-form-label col-sm-2 pt-0">Payment</legend>
-            <div class="col-sm-10">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                <label class="form-check-label" for="gridRadios1">
-                  Credit Card
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                  Debit Card
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
-                <label class="form-check-label" for="gridRadios3">
-                  PayPal 
-                </label>
-              </div>
-            </div>
-          </fieldset>
-          <div class="row mb-3">
-            <div class="col-sm-10 offset-sm-2">
-              <div class="form-check">
-            </div>
-            <div class="row g-3">
-                <div class="col-sm-7">
-                  <input type="text" class="form-control" placeholder="City" aria-label="City">
-                </div>
-                <div class="col-sm">
-                  <input type="text" class="form-control" placeholder="State" aria-label="State">
-                </div>
-                <div class="col-sm">
-                  <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
-                </div>
-              </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Place Your Order</button>
-        </form>
-       
-      </form>
-  </main>
-  <footer>&copy; 2020-2024 Scented Serenity</footer>
+    <div class="mb-3">
+        <label for="cvv">CVV</label>
+        <input id="cvv" class="form-control" type="text" />
+    </div>
+    
+
+
+
+
+    <button class="btn btn-primary">Place Your Order</button>
+</form>
+
+    
+  
+    
+
+
 </body>
