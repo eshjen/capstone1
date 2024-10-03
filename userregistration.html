@@ -56,8 +56,29 @@
 
           <div class="mb-3">
             <label for="re-enterpassword">Re-Enter Password</label>
-            <input id="re-enterpassword" class="form-control" type="password" />
+            <input id="re-enterpassword" class="form-control" type="password" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+          />
+            
+       
+          <div class="form-text">
+            Password must be:
+            <ul>
+              <li>at least 8 characters long</li>
+              <li>include at least one uppercase letter</li>
+              <li>one lowercase letter</li>
+              <li>one digit</li>
+              <li>and one special character</li>
+            </ul>
           </div>
+        </div>
+
+
+
+
+
+
+          
 
           <div class="form-group">
             <label>How did you hear about us?</label>
