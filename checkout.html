@@ -34,103 +34,124 @@
         <a class="nav-link active" href="checkout.html"> Checkout</a>
       </li>
     </ul>
-  
   </header>
 
   <main class="container-fluid mt-4 d-flex justify-content-center">
     <div class="card p-4 bg-body-tertiary" style="width: 40rem">
-  <form>
-<h3>Checkout </h3>
+      <form>
+        <h3>Checkout</h3>
+        <h6>Billing Address</h6>
+        <div class="mb-3">
+          <label for="firstname">First Name</label>
+          <input id="firstname" class="form-control" type="text" />
+        </div>
 
-    <div class="mb-3">
-        <label for="firstname">First Name</label>
-        <input id="firstname" class="form-control" type="text" />
+        <div class="mb-3">
+          <label for="emailoptional">Email (optional)</label>
+          <input id="emailoptional" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input id="address" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="apt">Apt, Suite, or Other (optional)</label>
+          <input id="apt" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="zip">Zip</label>
+          <input id="zip" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="city">City</label>
+          <input id="city" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="state">State</label>
+          <input id="state" class="form-control" type="text" />
+        </div>
+        <div class="mb-3">
+          <label for="country">Country</label>
+          <input id="country" class="form-control" type="text" />
+        </div>
+
+        <h6>Payment</h6>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="creditcard" />
+            <label class="form-check-label" for="creditcard">Credit Card</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="debitcard" />
+            <label class="form-check-label" for="debitcard">Debit Card</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="paypal" checked />
+            <label class="form-check-label" for="other">PayPal</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="nameoncard">Name On Card</label>
+          <input id="nameoncard" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="cardnumber">Credit Card Number</label>
+          <input id="cardnumber" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="expiration">Expiration</label>
+          <input id="expiration" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label for="cvv">CVV</label>
+          <input id="cvv" class="form-control" type="text" />
+        </div>
+      
+      </form>
+
+      <table class="ordersummary" ;>
+      <tr>
+        <th>Order Summary</th>
+      </tr>
+      <tr>
+        <td>Subtotal (4 items)</td>
+        <td>$51.00</td>
+      </tr>
+      <tr>
+        <td>Shipping:</td>
+        <td>$3.99</td>
+      </tr>
+      <tr>
+        <td>Total before tax:</td>
+        <td>$51.00</td>
+      </tr>
+      <tr>
+        <td>Tax:</td>
+        <td>$4.07</td>
+      </tr>
+      <tr>
+        <td>Order total:</td>
+        <td>$59.06</td>
+      </tr>
+    </table>
+    <button class="btn btn-primary mt-3">Place Your Order</button>
+
     </div>
 
-    <div class="mb-3">
-        <label for="emailoptional">Email (optional)</label>
-        <input id="emailoptional" class="form-control" type="text"/>
-    </div>
-
-    <div class="mb-3">
-        <label for="address">Address</label>
-        <input id="address" class="form-control" type="text" />
-    </div>
-
-    <div class="mb-3">
-        <label for="apt">Apt, Suite, or Other (optional)</label>
-        <input  id="apt" class="form-control" type="text">
-    </div>
-
-    <div class="mb-3">
-        <label for="zip">Zip</label>
-        <input id="zip" class="form-control" type="text" />
-    </div>
-
-    <div class="mb-3">
-        <label for="city">City</label>
-        <input id="city" class="form-control" type="text" />
-    </div>
-
-    <div class="mb-3">
-        <label for="country">Country</label>
-        <input id="country" class="form-control" type="text" />
-    </div>
-
-
-
-    <div class="mb-3">
-        <label for="nameoncard">Name On Card</label>
-        <input id="nameoncard" class="form-control" type="text" />
-    </div>
-
-    <div class="mb-3">
-        <label for="cardnumber">Credit Card Number</label>
-        <input id="cardnumber" class="form-control" type="text" />
-    </div>
-
-    <div class="mb-3">
-        <label for="expiration">Expiration</label>
-        <input id="expiration" class="form-control" type="text" />
-    </div>
     
-    <div class="mb-3">
-        <label for="cvv">CVV</label>
-        <input id="cvv" class="form-control" type="text" />
-    </div> 
     
-</form>
-
-<table class="ordersummary" ;>
-  
-  <tr>
-    <th>Order Summary</th>
-
-  </tr>
-  <tr>
-    <td>Subtotal (4 items)</td>
-    <td>$51.00</td>
-  </tr>
-  <tr>
-    <td>Shipping:</td>
-    <td>$3.99</td>
-  </tr>
-  <tr>
-    <td>Total before tax:</td>
-    <td>$51.00</td>
-  </tr>
-  <tr>
-    <td>Tax:</td>
-    <td>$4.07</td>
-  </tr>
-  <tr>
-    <td>Order total:</td>
-    <td>$59.06</td>
-  </tr>
-</table>
-<button class="btn btn-primary mt-3">Place Your Order</button>
-</main>    
-<footer class="mt-2 py-4 bg-body-tertiary">
-  <div class="container">&copy; 2020-2024 Scented Serenity</div>
-</footer>
+  </main>
+  <footer class="mt-2 py-4 bg-body-tertiary">
+    <div class="container">&copy; 2020-2024 Scented Serenity</div>
+  </footer>
 </body>
